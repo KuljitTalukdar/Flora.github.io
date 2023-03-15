@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RealEstate Property Landing Page">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Kuljit Talukdar">
+    <title>Flora - Property Finding Landing Page</title>
+
+    <!--css link-->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!--font family link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--header-->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./images/logo.svg" width="50" height="29" alt="logo">
+                <span>flora</span>
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                    <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                </button>
+
+                <ul class="navbar-list">
+
+                    <li>
+                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="navbar-link" data-nav-link>About</a>
+                    </li>
+
+                    <li>
+                        <a href="#service" class="navbar-link" data-nav-link>Service</a>
+                    </li>
+
+                    <li>
+                        <a href="#newproperty" class="navbar-link" data-nav-link>New Property</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a href="#" class="btn">Login</a>
+
+            <button class="nav-open-btn" aria-label="open menu"  data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-overlay data-nav-toggler></div>
+
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+
+            <!--hero-->
+
+            <section class="hero" id="home" aria-label="Hero">
+                <div class="container">
+
+                   <div class="hero-data-content">
+
+                    <h1 class="h1 hero-title">
+                        Discover a place
+                        you will love to live
+                    </h1>
+
+                    <p class="section-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque.
+                    </p>
+
+                    <form action="#" class="hero-form">
+
+                        <div class="input-wrapper">
+
+                            <div class="from-icon">
+                                <img src="./images/icon-1.svg" width="30" height="30" loading="lazy" alt="icon">
+                            </div>
+
+                            <label for="location" class="input-label">Location</label>
+
+                            <select name="location" id="location" class="dropdown-list">
+
+                                <option value="california,usa">California,USA</option>
+                                <option value="warsaw,poland">Warsaw,Poland</option>
+                                <option value="paris,france">Paris,France</option>
+                                <option value="bercelona,spain">Bercelona,Spain</option>
+                                <option value="rome,itally">Rome,Itally</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="input-wrapper">
+
+                            <div class="from-icon">
+                                <img src="./images/icon-2.svg" width="30" height="30" loading="lazy" alt="icon">
+                            </div>
+
+                            <label for="Price" class="input-label">Price</label>
+
+                            <select name="type-of-property" id="type-of-property" class="dropdown-list">
+
+                                <option value="$1000 - $10,000">$1000 - $10,000</option>
+                                <option value="$11000 - $20,000">$11000 - $20,000</option>
+                                <option value="$21000 - $30,000">$21000 - $30,000</option>
+                                <option value="$31000 - $40,000">$31000 - $40,000</option>
+                                <option value="$41000 - $50,000">$41000 - $50,000</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="input-wrapper">
+
+                            <div class="from-icon">
+                                <img src="./images/icon-3.svg" width="30" height="30" loading="lazy" alt="icon">
+                            </div>
+
+                            <label for="type-of-property" class="input-label">Type of Property</label>
+
+                            <select name="type-of-property" id="type-of-property" class="dropdown-list">
+
+                                <option value="house">House</option>
+                                <option value="apartment">Apartment</option>
+                                <option value="offices">Offices</option>
+                                <option value="town home">Town Home</option>
+                                <option value="commercieal space">Commercieal Space</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="input-search">
+
+                            <input type="search" name="search" id="search" required class="input-search">
+
+                            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+                        </div>
+
+                    </form>
+
+                    <div class="achivement">
+
+                        <div class="property">
+
+                            <h3 class="number">2000+</h3>
+
+                            <h4 class="text">Property Ready</h4>
+                        </div>
+
+                        <div class="customer">
+
+                            <h3 class="number">500+</h3>
+
+                            <h4 class="text">Happy Customer</h4>
+                        </div>
+
+                    </div>
+
+                   </div> 
+
+                   <figure class="hero-banner">
+                    <img src="./images/hero-banner.svg" alt="hero-banner" width="1718" height="1145" class="w-100">
+                   </figure>
+                </div>
+            </section>
+
+
+            <!--work-->
+
+            <section class="work" id="about" aria-label="Work">
+                <div class="container">
+
+                    <div class="work-data-content">
+
+                        <h2 class="section-title">
+                            How it Works
+                        </h2>
+
+                        <p class="section-text">
+                            Using it can make you sound like you have been studying english for a long time. Here’s the challenge
+                        </p>
+
+                    </div>
+
+                    <ul class="work-card">
+
+                       <li class="work-card-content">
+
+                            <div class="card-icon">
+                                <img src="./images/apartment-icon-1.svg" width="40" height="40" loading="lazy" alt="appartment-icon">
+                            </div>
+
+                            <h3 class="card-title">
+                                Search Apartment
+                            </h3>
+
+                            <p class="section-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae.
+                            </p>
+
+                       </li>
+
+                       <li class="work-card-content">
+
+                        <div class="card-icon">
+                            <img src="./images/apartment-icon-2.svg" width="40" height="40" loading="lazy" alt="appartment-icon">
+                        </div>
+
+                        <h3 class="card-title">
+                            Select Apartment
+                        </h3>
+
+                        <p class="section-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae.
+                        </p>
+
+                       </li>
+
+                       <li class="work-card-content">
+
+                        <div class="card-icon">
+                            <img src="./images/apartment-icon-3.svg" width="40" height="40" loading="lazy" alt="appartment-icon">
+                        </div>
+
+                        <h3 class="card-title">
+                            Confirm Apartment
+                        </h3>
+
+                        <p class="section-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae.
+                        </p>
+
+                       </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+            <!--dream home-->
+
+            <section class="dream-home" id="about" aria-label="Dream-Home">
+                <div class="container">
+
+                    <div class="dream-home-data-content">
+
+                        <h2 class="section-title">
+                            We will help you to find 
+                            Dream Home
+                        </h2>
+
+                        <p class="section-text">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
+                        </p>
+                    </div>
+
+                    <div class="dream-home-top-banner-content">
+                        <figure>
+                            <img src="./images/banner-1.svg" width="1024" height="438" alt="home-banner" class="w-100">
+                        </figure>
+
+                        <div class="home-banner-card">
+
+                            <p class="price">
+                                $2000/month
+                            </p>
+
+                            <h3 class="card-title">
+                                Apartment 2500 sqft
+                            </h3>
+
+                            <ul class="home-benifit-list">
+
+                                <li class="list-item">
+                                    <ion-icon name="bed-outline" aria-hidden="true"></ion-icon>
+                                    <span>2</span>
+                                </li>
+
+                                <li class="list-item">
+                                    <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                                </li>
+
+                                <li class="list-item">
+                                    <ion-icon name="car-sport-outline" aria-hidden="true"></ion-icon>
+                                    <span>1</span>
+                                </li>
+
+                            </ul>
+
+                            <address class="home-address">
+                                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                                1901 Thornridge Cir. Shiloh, 
+                                Hawaii 81063
+                            </address>
+
+                        </div>
+                    </div>
+
+                    <div class="dream-home-bottom-banner-content">
+                        <figure>
+                            <img src="./images/banner-2.svg" width="1024" height="438" alt="home-banner" class="w-100">
+                        </figure>
+
+                        <div class="home-banner-card home-banner-card-bottom">
+
+                            <p class="price">
+                                $2000/month
+                            </p>
+
+                            <h3 class="card-title">
+                                Apartment 2500 sqft
+                            </h3>
+
+                            <ul class="home-benifit-list">
+
+                                <li class="list-item">
+                                    <ion-icon name="bed-outline" aria-hidden="true"></ion-icon>
+                                    <span>2</span>
+                                </li>
+
+                                <li class="list-item">
+                                    <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                                </li>
+
+                                <li class="list-item">
+                                    <ion-icon name="car-sport-outline" aria-hidden="true"></ion-icon>
+                                    <span>1</span>
+                                </li>
+
+                            </ul>
+
+                            <address class="home-address">
+                                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+                                1901 Thornridge Cir. Shiloh, 
+                                Hawaii 81063
+                            </address>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!--properties-->
+
+            <section class="properties" id="services" aria-label="Properties">
+                <div class="container">
+
+                    <div class="properties-data-content">
+                        <h2 class="section-title">
+                            Our most trending properties
+                        </h2>
+
+                        <p class="section-text">
+                            It is a long established fact that a reader will be distracted by the readable 
+                            content of a page when looking at its layout. The point of using.
+                        </p>
+                    </div>
+
+                    <ul class="properties-list">
+
+                        <li class="properties-card">
+
+                            <figure>
+                                <img src="./images/card-banner-1.svg" width="326" height="296" alt="banner" class="img-cover">
+                            </figure>
+
+                            <div class="properties-card-content">
+
+                                <div class="properties-card-content-top">
+                                    <h4 class="properties-price">$140000</h4>
+
+                                    <ion-icon name="share-social-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="properties-title">
+                                    Luxury Apartment 
+                                    in California
+                                </h3>
+
+                                <ul class="home-benifit-list">
+
+                                    <li class="list-item">
+                                        <ion-icon name="bed-outline" aria-hidden="true"></ion-icon>
+                                        <span>2</span>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="car-sport-outline" aria-hidden="true"></ion-icon>
+                                        <span>1</span>
+                                    </li>
+    
+                                </ul>
+
+                                <address class="home-address">
+                                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+    
+                                    1901 Thornridge Cir. Shiloh, 
+                                    Hawaii 81063
+                                </address>
+
+                            </div>
+
+                        </li>
+
+                        <li class="properties-card">
+
+                            <figure>
+                                <img src="./images/card-banner-2.svg" width="326" height="296" alt="banner" class="img-cover">
+                            </figure>
+
+                            <div class="properties-card-content">
+
+                                <div class="properties-card-content-top">
+                                    <h4 class="properties-price">$540000</h4>
+
+                                    <ion-icon name="share-social-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="properties-title">
+                                    Luxury Apartment 
+                                    in New York
+                                </h3>
+
+                                <ul class="home-benifit-list">
+
+                                    <li class="list-item">
+                                        <ion-icon name="bed-outline" aria-hidden="true"></ion-icon>
+                                        <span>2</span>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                                        <span>2</span>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="car-sport-outline" aria-hidden="true"></ion-icon>
+                                        <span>1</span>
+                                    </li>
+    
+                                </ul>
+
+                                <address class="home-address">
+                                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+    
+                                    1901 Thornridge Cir. Shiloh, 
+                                    Hawaii 81063
+                                </address>
+
+                            </div>
+
+                        </li>
+
+                        <li class="properties-card">
+
+                            <figure>
+                                <img src="./images/card-banner-3.svg" width="326" height="296" alt="banner" class="img-cover">
+                            </figure>
+
+                            <div class="properties-card-content">
+
+                                <div class="properties-card-content-top">
+                                    <h4 class="properties-price">$40000</h4>
+
+                                    <ion-icon name="share-social-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="properties-title">
+                                    Luxury Apartment 
+                                    in Chicago
+                                </h3>
+
+                                <ul class="home-benifit-list">
+
+                                    <li class="list-item">
+                                        <ion-icon name="bed-outline" aria-hidden="true"></ion-icon>
+                                        <span>2</span>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                                        <span>2</span>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="car-sport-outline" aria-hidden="true"></ion-icon>
+                                        <span>1</span>
+                                    </li>
+    
+                                </ul>
+
+                                <address class="home-address">
+                                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+    
+                                    1901 Thornridge Cir. Shiloh, 
+                                    Hawaii 81063
+                                </address>
+
+                            </div>
+
+                        </li>
+
+                        <li class="properties-card">
+
+                            <figure>
+                                <img src="./images/card-banner-4.svg" width="326" height="296" alt="banner" class="img-cover">
+                            </figure>
+
+                            <div class="properties-card-content">
+
+                                <div class="properties-card-content-top">
+                                    <h4 class="properties-price">$740000</h4>
+
+                                    <ion-icon name="share-social-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="properties-title">
+                                    Luxury Apartment 
+                                    in Florida
+                                </h3>
+
+                                <ul class="home-benifit-list">
+
+                                    <li class="list-item">
+                                        <ion-icon name="bed-outline" aria-hidden="true"></ion-icon>
+                                        <span>2</span>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                                        <span>2</span>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="car-sport-outline" aria-hidden="true"></ion-icon>
+                                        <span>1</span>
+                                    </li>
+    
+                                </ul>
+
+                                <address class="home-address">
+                                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+    
+                                    1901 Thornridge Cir. Shiloh, 
+                                    Hawaii 81063
+                                </address>
+
+                            </div>
+
+                        </li>
+
+                        <li class="properties-card">
+
+                            <figure>
+                                <img src="./images/card-banner-5.svg" width="326" height="296" alt="banner" class="img-cover">
+                            </figure>
+
+                            <div class="properties-card-content">
+
+                                <div class="properties-card-content-top">
+                                    <h4 class="properties-price">$100000</h4>
+
+                                    <ion-icon name="share-social-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="properties-title">
+                                    Luxury Apartment 
+                                    in Las Vegas
+                                </h3>
+
+                                <ul class="home-benifit-list">
+
+                                    <li class="list-item">
+                                        <ion-icon name="bed-outline" aria-hidden="true"></ion-icon>
+                                        <span>2</span>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                                        <span>2</span>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="car-sport-outline" aria-hidden="true"></ion-icon>
+                                        <span>1</span>
+                                    </li>
+    
+                                </ul>
+
+                                <address class="home-address">
+                                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+    
+                                    1901 Thornridge Cir. Shiloh, 
+                                    Hawaii 81063
+                                </address>
+
+                            </div>
+
+                        </li>
+
+                        <li class="properties-card">
+
+                            <figure>
+                                <img src="./images/card-banner-6.svg" width="326" height="296" alt="banner" class="img-cover">
+                            </figure>
+
+                            <div class="properties-card-content">
+
+                                <div class="properties-card-content-top">
+                                    <h4 class="properties-price">$800000</h4>
+
+                                    <ion-icon name="share-social-outline" aria-hidden="true"></ion-icon>
+                                </div>
+
+                                <h3 class="properties-title">
+                                    Luxury Apartment 
+                                    in Bercelona
+                                </h3>
+
+                                <ul class="home-benifit-list">
+
+                                    <li class="list-item">
+                                        <ion-icon name="bed-outline" aria-hidden="true"></ion-icon>
+                                        <span>2</span>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="business-outline" aria-hidden="true"></ion-icon>
+                                        <span>2</span>
+                                    </li>
+    
+                                    <li class="list-item">
+                                        <ion-icon name="car-sport-outline" aria-hidden="true"></ion-icon>
+                                        <span>1</span>
+                                    </li>
+    
+                                </ul>
+
+                                <address class="home-address">
+                                    <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+    
+                                    1901 Thornridge Cir. Shiloh, 
+                                    Hawaii 81063
+                                </address>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+            <!--testimonials-->
+
+            <section class="testimonials" aria-label="Testimonials">
+                <div class="container">
+
+                    <div class="testimonial-data-content">
+                        <h2 class="section-title">
+                            What our customers say’s
+                        </h2>
+
+                        <p class="section-text">
+                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                        </p>
+                    </div>
+
+                    <ul class="testimonial-list">
+
+                        <li class="testimonial-card">
+
+                            <div class="testimonial-top">
+                                <figure>
+                                    <img src="./images/testimonial-1.svg" width="60" height="60" loading="lazy" alt="testimonial-img" class="testimonial-icon">
+                                </figure>
+    
+                                <div class="testimonial-information">
+                                    <h3 class="testimonial-name">Kety Willions</h3>
+    
+                                <p class="details">
+                                    California, United State
+                                </p>
+                                </div>
+                            </div>
+
+                            <blockquote class="blockquote-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            </blockquote>
+
+                            <div class="ratting-wrapper">
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                            </div>
+
+                        </li>
+
+                        <li class="testimonial-card">
+
+                            <div class="testimonial-top">
+                                <figure>
+                                    <img src="./images/testimonial-2.svg" width="60" height="60" loading="lazy" alt="testimonial-img" class="testimonial-icon">
+                                </figure>
+    
+                                <div class="testimonial-information">
+                                    <h3 class="testimonial-name">Saravsky</h3>
+    
+                                <p class="details">
+                                    Florida, United State
+                                </p>
+                                </div>
+                            </div>
+
+                            <blockquote class="blockquote-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            </blockquote>
+
+                            <div class="ratting-wrapper">
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                            </div>
+
+                        </li>
+
+                        <li class="testimonial-card">
+
+                            <div class="testimonial-top">
+                                <figure>
+                                    <img src="./images/testimonial-3.svg" width="60" height="60" loading="lazy" alt="testimonial-img" class="testimonial-icon">
+                                </figure>
+    
+                                <div class="testimonial-information">
+                                    <h3 class="testimonial-name">Hanry D'souza</h3>
+    
+                                <p class="details">
+                                    Miami, United State
+                                </p>
+                                </div>
+                            </div>
+
+                            <blockquote class="blockquote-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            </blockquote>
+
+                            <div class="ratting-wrapper">
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                            </div>
+
+                        </li>
+
+                        <li class="testimonial-card">
+
+                            <div class="testimonial-top">
+                                <figure>
+                                    <img src="./images/testimonial-4.svg" width="60" height="60" loading="lazy" alt="testimonial-img" class="testimonial-icon">
+                                </figure>
+    
+                                <div class="testimonial-information">
+                                    <h3 class="testimonial-name">Robert</h3>
+    
+                                <p class="details">
+                                    California, United State
+                                </p>
+                                </div>
+                            </div>
+
+                            <blockquote class="blockquote-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            </blockquote>
+
+                            <div class="ratting-wrapper">
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                                <ion-icon name="star-sharp" aria-hidden="true"></ion-icon>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+    <!--footer-->
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+
+                    <div class="footer-logo">
+                        <img src="./images/footer-logo.svg" width="44" height="25" loading="lazy" alt="Footer-logo">
+                        <span>flora</span>
+                    </div>
+    
+                    <p class="section-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet tempus felis vitae sit est quisque.
+                    </p>
+    
+                </div>
+    
+                <ul class="footer-list">
+    
+                    <li>
+                        <p class="footer-list-title">Service</p>
+                    </li>
+    
+                    <li class="footer-link">Payment & Tax</li>
+                    <li class="footer-link">Features</li>
+                    <li class="footer-link">View Booking</li>
+                    <li class="footer-link">Support</li>
+                </ul>
+    
+                <ul class="footer-list">
+    
+                    <li>
+                        <p class="footer-list-title">About</p>
+                    </li>
+    
+                    <li class="footer-link">About us</li>
+                    <li class="footer-link">News</li>
+                    <li class="footer-link">Pricing</li>
+                    <li class="footer-link">New Property</li>
+                </ul>
+    
+                <ul class="footer-list">
+    
+                    <li>
+                        <p class="footer-list-title">Our Location</p>
+                    </li>
+    
+                    <li>
+                        <address>
+                            2972 Westheimer Rd. Santa Ana, Illinois 85486 
+                        </address>
+                    </li>
+    
+                    <ul class="social-list">
+    
+                        <li class="social-link">
+                            <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+                        </li>
+    
+                        <li class="social-link">
+                            <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+                        </li>
+    
+                        <li class="social-link">
+                            <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                        </li>
+    
+                    </ul>
+    
+                </ul>
+    
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    Copyright 2022 flora. All Rights Reserved
+                </p>
+
+
+                <ul class="footer-bottom-list">
+
+                    <li class="footer-bottom-link">Terms & Conditions</li>
+                    <li class="footer-bottom-link">Privacy Policy</li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--back to top-->
+
+    <a href="#" class="back-to-top-btn active" aria-label="Back to top" data-back-to-top>
+        <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!--JS link-->
+    <script src="./JS/script.js"></script>
+
+    <!--ion-icon link-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
